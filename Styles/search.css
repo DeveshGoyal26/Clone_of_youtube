@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto","Arial",sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #181818;
+    margin: 0;
+}
+
+#navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding: 5px 20px;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    border: black solid;
+    background-color: black;
+}
+
+
+#navbar > div {
+    height: fit-content;
+    display: flex;
+    height: 27px;
+    align-items: center;
+}
+
+path {
+    fill: rgb(255, 255, 255);
+}
+
+#logo_div {
+    height: 10px;
+    gap: 20px;
+}
+
+svg {
+    margin: auto !important;
+    height: 25px !important;
+    /* border: red solid; */
+}
+
+
+#search_div {
+    height: 40px !important;
+    width:fit-content  !important;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid; */
+}
+
+#user_div{
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    /* border: red solid; */
+}
+
+#image_div {
+    height: 30px !important;
+}
+
+#image_div > img {
+    height: 100%;
+    border-radius: 50px;
+}
+
+
+.container {
+    height: 100%;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+
+
+  input {
+      outline: none;
+      height: 100%;
+      width: 500px;
+      border-radius: 2px 0 0 2px;
+      border: 1px solid hsl(0deg 0% 19%);
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  input:focus {
+    border: 1px solid hsl(206.1, 79.3%, 52.7%);
+  }
+
+
+  button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border: 0;
+  }
+
+  #search_btn {
+      width: 65px;
+    border-radius: 0 2px 2px 0;
+    background-color: hsl(0deg 0% 19%);
+  }
+
+  #voice {
+      margin-left: 10px;
+      background: transparent;
+  }
+
+
+  #search_results {
+      width: 70%;
+      margin: auto;
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+
+  #search_results > div {
+      display: flex;
+      gap: 10px;
+  }
