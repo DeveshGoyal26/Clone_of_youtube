@@ -12,7 +12,7 @@ logo.addEventListener("click", () => {
 
 let video_id = JSON.parse(localStorage.getItem("videoId")) || [];
 
-let url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${video_id}&key=AIzaSyBI3XXCba3v0xkHuyKgeOJMhJvztZKMw_E`;
+let url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${video_id}&key=AIzaSyDILqEOK03dPYj3i_pj0h1U2dYoGgKjdWY`;
 
 const vd_fun = async () => {
   try {

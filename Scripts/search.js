@@ -27,18 +27,18 @@ logo.addEventListener("click", () => {
 let search_btn = document.getElementById("search_btn");
 
 search_btn.addEventListener("click", () => {
-    let input = document.getElementById("search2")
-    let n = input.value
-    console.log('n:', n)
-    localStorage.setItem("search_name",JSON.stringify(n))
+  let input = document.getElementById("search2")
+  let n = input.value
+  console.log('n:', n)
+  localStorage.setItem("search_name", JSON.stringify(n))
   results();
 });
 
 const results = async () => {
   try {
-    let search_keyword = JSON.parse(localStorage.getItem("search_name"))||[];
+    let search_keyword = JSON.parse(localStorage.getItem("search_name")) || [];
 
-    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${search_keyword}&type=video&key=AIzaSyBI3XXCba3v0xkHuyKgeOJMhJvztZKMw_E&maxResults=20`;
+    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${search_keyword}&type=video&key=AIzaSyDILqEOK03dPYj3i_pj0h1U2dYoGgKjdWY&maxResults=20`;
     console.log('search_keyword:', search_keyword)
 
     let res = await fetch(url);
